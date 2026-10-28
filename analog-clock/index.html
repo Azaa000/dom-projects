@@ -3,10 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#f5f3ee" />
-    <title>Analog Clock · A moment in time</title>
+    <title>Password generator</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
 
-  <body>Analog clock</body>
-</html>
+  <body class="min-h-screen min-w-[1000px] bg-[#101b16] font-sans text-[#f0fdf4]">
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header class="flex h-24 shrink-0 items-center justify-between border-b border-[#86efac]/10">
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#86efac]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#86efac] transition-colors hover:border-[#86efac]/35 hover:bg-[#86efac]/10 hover:text-[#f0fdf4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#86efac] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#86efac]/65">The everyday collection / 02</span>
+      </header>
+
+  <div class="flex flex-1 items-center justify-center py-10">
+     <div class="min-w-[520px] min-h-[571px] border border-[#FFFFFF1A] rounded-3xl p-[36px] bg-[#192B22]">
+      <div class="w-[44px] h-[44px] rounded-xl bg-[#4ADE8026] flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lock-keyhole preview-icon"><circle cx="12" cy="16" r="1"/><rect x="3" y="10" width="18" height="12" rx="2"/><path d="M7 10V7a5 5 0 0 1 10 0v3"/></svg></div>
+      <div class="text-[28px] text-[#F0FDF4] font-semibold w-[273px] h-[34px] tracking-[0]">Password generator</div>
+      <div class="text-[14px] text-[#A4B9AD] font-normal w-[235px] h-[17px] tracking-[0]">A strong password. One click away.</div>
+      <div class="text-[#A4B9AD] text-[12px] font-normal w-[85px] h-[15px] tracking-[0]">Your password</div>
+      <div class="w-[448px] h-[64px] border border-[#FFFFFF1A] bg-[#101B16] flex justify-between rounded-xl pr-[12px] pl-[16px]">
+        <div class=""></div>
+        <div class="">Copy</div>
+      </div>
+      <div class="">Uses letters, numbers, and symbols.</div>
+      <div class="">
+        <span class="">Password length</span>
+        <span class="">16</span>
+      </div>
+      <div class=""></div>
+      <div class="">
+        <span>8</span>
+        <span>24</span>
+      </div>
+      <div class="">Generate password</div>
+      <div class="">Generate password</div>
+     </div>
+  </div>
+
+    </div>
+  </body>
+</html> 
