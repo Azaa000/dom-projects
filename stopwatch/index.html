@@ -5,9 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Stopwatch</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js" defer></script>
   </head>
-
-  <body>
-    Stopwatch
+ 
+  <body class="min-h-screen min-w-[1000px] bg-[#101714] font-sans text-[#f0fdf4]">
+    <div class="mx-auto flex min-h-screen w-[920px] flex-col">
+      <header class="flex h-24 shrink-0 items-center justify-between border-b border-[#c5d9bd]/10">
+        <nav>
+          <a
+            href="../index.html"
+            class="inline-flex items-center gap-2 rounded-full border border-[#c5d9bd]/15 bg-white/5 px-4 py-2.5 text-xs font-medium text-[#c5d9bd] transition-colors hover:border-[#c5d9bd]/35 hover:bg-[#c5d9bd]/10 hover:text-[#f0fdf4] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#c5d9bd] motion-reduce:transition-none"
+          >
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M19 12H5m7-7-7 7 7 7" />
+            </svg>
+            Back to projects
+          </a>
+        </nav>
+        <span class="text-[10px] font-medium uppercase tracking-[2.5px] text-[#c5d9bd]/65">The everyday collection / 04</span>
+      </header>
+     
+<div class="flex flex-1 items-center justify-center py-10">
+  <div class="w-[620px] h-[551px] border border-[#FFFFFF26] bg-[#19231E8C] rounded-[28px] p-[40px] ">
+    <div class="w-[540px] h-[44px] justify-between flex">
+      <div class="w-[44px] h-[44px] rounded-xl bg-[#B5CBB21A] flex justify-center items-center"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-alarm-clock preview-icon"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M5 3 2 6"/><path d="m22 6-3-3"/><path d="M6.38 18.7 4 21"/><path d="M17.64 18.67 20 21"/></svg></div>
+      <div class="w-[62px] h-[29px] text-[12px] text-[#C5D9BD] font-medium tracking-[0]  border border-[#C5D9BD26] bg-[#B5CBB20D] flex justify-center items-center pt-[6px] pr-[12px] pb-[6px] pl-[12px] rounded-[99px]">Ready</div>
+    </div>
+    <div class="mt-[30px] w-[195px] h-[60px] text-[40px] text-[#F0FDF4] font-normal tracking-[-1px]">Stopwatch</div>
+    <div class="mt-[10px] w-[186px] h-[17px] text-[14px] text-[#A4B9AD] font-normal tracking-[0]">Make time for what matters.</div>
+    <div class="mt-[30px] border-y-1 border-[#B5CBB226] flex justify-around pt-[25px] pb-[25px]">
+      <div class="w-[540px] h-[86px] flex gap-[20px]">
+        <div class="w-[166.67px] h-[86px] flex flex-col gap-[16px] flex justify-center items-center">
+          <span class="w-[66px] h-[56px] text-[56px] text-[#EDF3E8] font-light tracking-[-2px] flex justify-center items-center">00</span>
+          <span class="w-[40px] h-[11px] text-[9px] text-[#9BAD9E] font-medium tracking-[2px] flex justify-center items-center">HOURS</span>
+        </div>
+        <div class="w-[25px] h-[56px] font-normal text-[40px] text-[#5C7161] tracking-[0] flex justify-center items-center">:</div>
+        <div class="w-[166.67px] h-[86px] flex flex-col gap-[16px] flex justify-center items-center">
+          <span class="w-[66px] h-[56px] text-[56px] text-[#EDF3E8] font-light tracking-[-2px] flex justify-center items-center">00</span>
+          <span class="w-[40px] h-[11px] text-[9px] text-[#9BAD9E] font-medium tracking-[2px] flex justify-center items-center">MINUTES</span>
+        </div>
+        <div class="w-[25px] h-[56px] font-normal text-[40px] text-[#5C7161] tracking-[0] flex justify-center items-center">:</div>
+        <div class="w-[166.67px] h-[86px] flex flex-col gap-[16px] flex justify-center items-center">
+          <span class="w-[66px] h-[56px] text-[56px] text-[#EDF3E8] font-light tracking-[-2px] flex justify-center items-center">00</span>
+          <span class="w-[40px] h-[11px] text-[9px] text-[#9BAD9E] font-medium tracking-[2px] flex justify-center items-center">SECONDS</span>
+        </div>
+      </div>
+    </div>
+    <div class="w-[540px] h-[48px] flex gap-[12px] mt-[40px]">
+      <div class="w-[258px] h-[48px] flex justify-center items-center text-[14px] text-[#102418] font-semibold tracking-[0] bg-[#B5CBB2] rounded-xl">Start</div>
+      <div class="w-[129px] h-[48px] border border-[#FFFFFF1A] flex justify-center items-center text-[12px] text-[#DCECE2] font-medium tracking-[0] bg-[#FFFFFF0D] rounded-xl">Pause</div>
+      <div class="w-[129px] h-[48px] border border-[#FFFFFF26] flex justify-center items-center text-[14px] text-[#A4B9AD] font-medium tracking-[0] bg-[#19231E8C] rounded-xl">Reset</div>
+    </div>
+    <div class="w-[540px] h-[16px] flex justify-center text-[12px] mt-[20px] text-[#8AA294] font-normal ">A moment of focus. At your own pace.</div>
+  </div>
+      </div>
+    </div>
   </body>
 </html>
+ 
