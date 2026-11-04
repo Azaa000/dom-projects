@@ -25,9 +25,30 @@
       </header>
 
 <div class="flex flex-1 items-center justify-center py-10">
-  <div class="w-[576px] h-575p">
-    ]
-  </div>    
+        <div class="-w[576px] h-[576px] rounded-[24px] border p-[32px] border-[#27272A] bg-[#18181B] flex gap-[20px] flex-col">
+          <div class="w-[159px] h-[29px] text-[24px] text-[#F4F4F5] font-semibold tracking-[0]">Reaction time</div>
+          <div class="w-[313px] h-[24px] font-normal text-[14px] tracking-[0] text-[#A1A1AA]">Wait for green, then click as quickly as you can.</div>
+          <div id="click-red" class="w-[512px] h-[256px] rounded-[16px] flex gap-[12px] bg-[#27272A] flex-col justify-center items-center" >
+            <div class="w-[48px] h-[48px] rounded-full border-[2px] border-[#F4F4F5] flex justify-center items-center">
+              <div class="w-[22px] h-[22px] rounded-full border border-[2px] border-[#F4F4F5] flex items-center justify-center">
+                <div class="w-[6px] h-[6px] rounded-full border-[2px] border-[#F4F4F5] bg-[#F4F4F5]"></div>
+              </div>
+            </div>
+            <div class="w-[234px] h-[29px] text-[24px] text-[24px] font-semibold text-[#f4f4f5]">Ready when you are</div>
+            <div class="w-[85px] h-[17px] text-[14px] font-normal tracking-[0] text-[#f4f4f5]">Click to start</div>
+          </div>
+          <div class="w-[512px] h-[84px] flex gap-[12px]">
+            <div class="w-[250px] h-[84px] rounded-xl flex gap-[4px] bg-[#27272A] flex-col justify-center items-center">
+              <div id="last-ms" class="w-[24px] h-[29px] items-center flex font-normal text-[24px] text-[#D9F99D]">—</div>
+              <div class="w-[73px] h-[15px] font-normal text-[12px] text-[#A1A1AA]">Last attempt</div>
+            </div>
+            <div class="w-[250px] h-[84px] rounded-xl flex gap-[4px] bg-[#27272A] flex-col justify-center items-center">
+              <div id="best-ms" class="w-[24px] h-[29px] items-center flex font-normal text-[24px] text-[#D9F99D]">—</div>
+              <div class="w-[96px] h-[15px] font-normal text-[12px] text-[#A1A1AA]">Best this session</div>
+            </div>
+          </div>
+          <div class="w-[512px] h-[40px] font-normal text-[12px] text-[#A1A1AA] text-center">Click the panel, or focus it and press Space or Enter. Clicking before green ends the attempt.</div>
+        </div>
       </div>
     </div>
   </body>
